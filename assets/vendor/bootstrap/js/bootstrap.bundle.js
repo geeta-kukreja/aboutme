@@ -1871,11 +1871,11 @@
     }
 
     var clientRect = element.getBoundingClientRect();
-    var scGeeta = 1;
+    var scaleX = 1;
     var scaleY = 1;
 
     if (includeScale && isHTMLElement(element)) {
-      scGeeta = element.offsetWidth > 0 ? round(clientRect.width) / element.offsetWidth || 1 : 1;
+      scaleX = element.offsetWidth > 0 ? round(clientRect.width) / element.offsetWidth || 1 : 1;
       scaleY = element.offsetHeight > 0 ? round(clientRect.height) / element.offsetHeight || 1 : 1;
     }
 
@@ -1883,9 +1883,9 @@
         visualViewport = _ref.visualViewport;
 
     var addVisualOffsets = !isLayoutViewport() && isFixedStrategy;
-    var x = (clientRect.left + (addVisualOffsets && visualViewport ? visualViewport.offsetLeft : 0)) / scGeeta;
+    var x = (clientRect.left + (addVisualOffsets && visualViewport ? visualViewport.offsetLeft : 0)) / scaleX;
     var y = (clientRect.top + (addVisualOffsets && visualViewport ? visualViewport.offsetTop : 0)) / scaleY;
-    var width = clientRect.width / scGeeta;
+    var width = clientRect.width / scaleX;
     var height = clientRect.height / scaleY;
     return {
       width: width,
@@ -3161,9 +3161,9 @@
 
   function isElementScaled(element) {
     var rect = element.getBoundingClientRect();
-    var scGeeta = round(rect.width) / element.offsetWidth || 1;
+    var scaleX = round(rect.width) / element.offsetWidth || 1;
     var scaleY = round(rect.height) / element.offsetHeight || 1;
-    return scGeeta !== 1 || scaleY !== 1;
+    return scaleX !== 1 || scaleY !== 1;
   } // Returns the composite rect of an element relative to its offsetParent.
   // Composite means it takes into account transforms as well as layout.
 

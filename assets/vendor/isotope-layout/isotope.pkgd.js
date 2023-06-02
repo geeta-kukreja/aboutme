@@ -1073,7 +1073,7 @@ proto.transition = function( args ) {
   // set from styles
   if ( args.from ) {
     this.css( args.from );
-    // force redraw. http://blog.Geetamaccaw.com/css-transitions
+    // force redraw. http://blog.alexmaccaw.com/css-transitions
     var h = this.element.offsetHeight;
     // hack for JSHint to hush about unused var
     h = null;

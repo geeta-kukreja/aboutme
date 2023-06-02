@@ -1734,7 +1734,7 @@ url("./fonts/bootstrap-icons.woff?1fa40e8900654d2863d011707b9fb6f2") format("wof
 .bi-airplane-engines::before { content: "\f7cb"; }
 .bi-airplane-fill::before { content: "\f7cc"; }
 .bi-airplane::before { content: "\f7cd"; }
-.bi-Geetaa::before { content: "\f7ce"; }
+.bi-alexa::before { content: "\f7ce"; }
 .bi-alipay::before { content: "\f7cf"; }
 .bi-android::before { content: "\f7d0"; }
 .bi-android2::before { content: "\f7d1"; }
