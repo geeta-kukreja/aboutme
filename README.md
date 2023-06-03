@@ -1,4 +1,3 @@
-About Me
 Hello and welcome to my GitHub page! My name is Geeta Kukreja, and I'm thrilled to share a little bit about myself with you.
 
 Who Am I?
